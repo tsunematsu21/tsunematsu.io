@@ -1,0 +1,29 @@
+{
+  "name": "tsunematsu21.github.io",
+  "version": "1.0.0",
+  "description": "The awesome portfolio",
+  "author": "tsunematsu21",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup",
+    "start": "nuxt-ts start",
+    "lint": "eslint --ext .ts,.js,.vue ."
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.3.4",
+    "@nuxtjs/eslint-config-typescript": "^0.1.3",
+    "eslint": "^6.6.0",
+    "node-sass": "^4.13.0",
+    "push-dir": "^0.4.1",
+    "sass-loader": "^8.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@nuxt/typescript-runtime": "^0.2.4",
+    "bulma": "^0.8.0",
+    "nuxt": "^2.10.2"
+  }
+}
