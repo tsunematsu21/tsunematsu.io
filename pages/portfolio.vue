@@ -6,8 +6,24 @@
     <p class="subtitle">
       :(){ :|:& };:
     </p>
+    <div class="columns">
+      <div class="column is-one-third-desktop">
+        <RepositoryCard repo="tsunematsu21.github.io" img="https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6" />
+      </div>
+    </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import RepositoryCard from '~/components/RepositoryCard.vue'
+
+export default Vue.extend({
+  components: {
+    RepositoryCard
+  }
+})
+</script>
 
 <style lang="scss" scoped>
 #avater {
