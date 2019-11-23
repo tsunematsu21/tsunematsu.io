@@ -6,7 +6,7 @@
     <p class="subtitle">
       2B || !2B
     </p>
-    <div id="avater" />
+    <div id="avater" :style="`background-image: url(${avatar_url})`" />
     <div class="has-text-left">
       <div class="card has-background-main" style="padding-top: 96px;">
         <div class="card-content">
@@ -147,13 +147,25 @@
   </div>
 </template>
 
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  async asyncData ({ $axios }) {
+    const user = await $axios.$get('https://api.github.com/users/tsunematsu21')
+    return {
+      avatar_url: user.avatar_url
+    }
+  }
+})
+</script>
+
 <style lang="scss" scoped>
 #avater {
   position: relative;
   z-index: 2;
   width: 192px;
   height: 192px;
-  background-image: url(https://s.gravatar.com/avatar/c639be9f77f708421f2eeddf3d2b8b11?s=192);
   background-size: cover;
   margin: 0px auto -96px;
   border-width: 8px;

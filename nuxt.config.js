@@ -26,6 +26,9 @@ export default {
     name: 'fade-right',
     mode: 'out-in'
   },
+  modules: [
+    '@nuxtjs/axios'
+  ],
   buildModules: ['@nuxt/typescript-build'],
   typescript: {
     typeCheck: {
