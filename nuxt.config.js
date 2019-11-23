@@ -29,10 +29,16 @@ export default {
   modules: [
     '@nuxtjs/axios'
   ],
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
+  ],
   typescript: {
     typeCheck: {
       eslint: true
     }
+  },
+  googleAnalytics: {
+    id: 'UA-153177112-1'
   }
 }
