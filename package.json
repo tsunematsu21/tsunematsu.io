@@ -2,8 +2,21 @@
   "name": "tsunematsu21.github.io",
   "version": "1.0.0",
   "description": "The awesome portfolio",
-  "author": "tsunematsu21",
-  "private": true,
+  "homepage": "https://tsunematsu21.github.io/",
+  "bugs": {
+    "url": "https://github.com/tsunematsu21/tsunematsu21.github.io/issues",
+    "email": "tsunematsu21@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "tsunematsu21",
+    "email": "tsunematsu21@users.noreply.github.com",
+    "url": "(https://github.com/tsunematsu21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsunematsu21/tsunematsu21.github.io.git"
+  },
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
@@ -11,6 +24,13 @@
     "deploy": "push-dir --dir=dist --branch=master --cleanup",
     "start": "nuxt-ts start",
     "lint": "eslint --ext .ts,.js,.vue ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@nuxt/typescript-runtime": "^0.2.4",
+    "@nuxtjs/axios": "^5.8.0",
+    "bulma": "^0.8.0",
+    "nuxt": "^2.10.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.3.4",
@@ -21,11 +41,5 @@
     "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "@nuxt/typescript-runtime": "^0.2.4",
-    "@nuxtjs/axios": "^5.8.0",
-    "bulma": "^0.8.0",
-    "nuxt": "^2.10.2"
-  }
+  "private": true
 }
