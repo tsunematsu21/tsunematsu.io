@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/tsunematsu21/tsunematsu21.github.io.svg?branch=develop)](https://travis-ci.org/tsunematsu21/tsunematsu21.github.io)
 [![GitHub](https://img.shields.io/github/license/tsunematsu21/tsunematsu21.github.io?color=blue)](LICENSE)
 
-A personal website made with [Nuxt.js](https://nuxtjs.org) and Bulma.
+A personal website made with [Nuxt.js](https://nuxtjs.org) and [Bulma](https://bulma.io) hosted on [GitHub Pages](https://pages.github.com/).
 
-![preview](https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6)
+[![Preview](https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6)](https://tsunematsu21.github.io)
 
 ## Getting started
 
