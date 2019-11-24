@@ -10,6 +10,9 @@
       <div class="column is-one-third-desktop">
         <RepositoryCard repo="tsunematsu21.github.io" img="https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6" />
       </div>
+      <div class="column is-one-third-desktop">
+        <RepositoryCard repo="actions-publish-gh-pages" img="https://repository-images.githubusercontent.com/223547340/357ba880-0efe-11ea-91a8-4d5cfb245a67" />
+      </div>
     </div>
   </div>
 </template>
