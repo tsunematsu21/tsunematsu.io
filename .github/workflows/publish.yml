@@ -1,0 +1,43 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - assets/**
+      - components/**
+      - layouts/**
+      - middleware/**
+      - pages/**
+      - plugins/**
+      - static/**
+      - store/**
+      - nuxt.config.js
+      - package.json
+      - tsconfig.json
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Generate static project
+        run: yarn generate
+
+      - name: Publish to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v0.1.0
+        with:
+          dir: dist
+          branch: master
+          token: ${{ secrets.GITHUB_ACCESS_TOKEN }}

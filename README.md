@@ -1,6 +1,6 @@
 # tsunematsu21.github.io
 
-[![Build Status](https://travis-ci.org/tsunematsu21/tsunematsu21.github.io.svg?branch=develop)](https://travis-ci.org/tsunematsu21/tsunematsu21.github.io)
+[![Actions Status](https://github.com/tsunematsu21/tsunematsu21.github.io/workflows/Publish%20to%20GitHub%20Pages/badge.svg)](https://github.com/tsunematsu21/tsunematsu21.github.io/actions?query=workflow%3A%22Publish+to+GitHub+Pages%22)
 [![GitHub](https://img.shields.io/github/license/tsunematsu21/tsunematsu21.github.io?color=blue)](LICENSE)
 
 A personal website made with [Nuxt.js](https://nuxtjs.org) and [Bulma](https://bulma.io) hosted on [GitHub Pages](https://pages.github.com/).
