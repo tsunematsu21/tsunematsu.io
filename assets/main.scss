@@ -8,17 +8,12 @@
 $family-serif: 'Ubuntu Mono', monospace;
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
 $primary: #ff6f61;
 $primary-invert: #ffffff;
-// Use the existing orange as the danger color
-$danger: $orange;
 // Use the new serif family
 $family-primary: $family-serif;
 
 // 4. Setup your Custom Colors
-$linkedin: #0077b5;
-$linkedin-invert: findColorInvert($linkedin);
 $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
@@ -28,7 +23,6 @@ $github-invert: findColorInvert($github);
 @import "~bulma/sass/utilities/derived-variables";
 $addColors: (
   "twitter":($twitter, $twitter-invert),
-  "linkedin": ($linkedin, $linkedin-invert),
   "github": ($github, $github-invert)
 );
 $colors: map-merge($colors, $addColors);
