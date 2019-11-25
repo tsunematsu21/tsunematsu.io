@@ -21,7 +21,6 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup",
     "start": "nuxt-ts start",
     "lint": "eslint --ext .ts,.js,.vue ."
   },
@@ -38,7 +37,6 @@
     "@nuxtjs/google-analytics": "^2.2.1",
     "eslint": "^6.6.0",
     "node-sass": "^4.13.0",
-    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   },
   "private": true
