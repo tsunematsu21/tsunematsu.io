@@ -16,7 +16,8 @@
               I'm Japanese coke drinking IT infrastructure engineer
               of company based in Tokyo, Japan.<br>
               On January 1st, 1994, I was born in the jungle and raised by a gorilla.<br>
-              One day, I acquired wisdom by eating the legendary banana.
+              One day, I acquired wisdom by eating the legendary banana<br>
+              and decided become to awesome engineer that useful for people.
             </p>
             <div class="buttons justify-content-center">
               <a href="https://twitter.com/tsunematsu21" target="_blank" class="button is-twitter is-">
