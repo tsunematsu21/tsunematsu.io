@@ -4,7 +4,7 @@
       tsunematsu21
     </h1>
     <p class="subtitle">
-      I'm amazing brilliant cool dignified excellent fantastic gorilla.
+      Power of the Gorilla.
     </p>
     <router-link to="about" class="button is-white is-outlined">
       <span class="icon">
