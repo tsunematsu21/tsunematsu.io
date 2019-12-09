@@ -1,4 +1,6 @@
-export default {
+import { Configuration } from '@nuxt/types'
+
+const nuxtConfig: Configuration = {
   mode: 'spa',
   head: {
     title: process.env.npm_package_name || '',
@@ -33,12 +35,9 @@ export default {
     '@nuxt/typescript-build',
     '@nuxtjs/google-analytics'
   ],
-  typescript: {
-    typeCheck: {
-      eslint: true
-    }
-  },
   googleAnalytics: {
     id: 'UA-153177112-1'
   }
 }
+
+module.exports = nuxtConfig
