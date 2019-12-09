@@ -10,19 +10,21 @@ A personal website made with [Nuxt.js](https://nuxtjs.org) and [Bulma](https://b
 ## Getting started
 
 ``` bash
-# install dependencies
-$ yarn install
+# Install dependencies
+yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# Serve with hot reload at localhost:3000
+yarn dev
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+# Lint check
+yarn lint
 
-# generate static project and manual deploy to master branch
-$ yarn generate
-$ yarn deploy
+# Build for production and launch server
+yarn build
+yarn start
+
+# Generate static project
+yarn generate
 ```
 
 ## License
