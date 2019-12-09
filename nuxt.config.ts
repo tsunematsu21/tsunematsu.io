@@ -7,7 +7,11 @@ const nuxtConfig: Configuration = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      },
       { name: 'theme-color', content: '#ff6f61' }
     ]
   },
@@ -28,13 +32,8 @@ const nuxtConfig: Configuration = {
     name: 'fade-right',
     mode: 'out-in'
   },
-  modules: [
-    '@nuxtjs/axios'
-  ],
-  buildModules: [
-    '@nuxt/typescript-build',
-    '@nuxtjs/google-analytics'
-  ],
+  modules: ['@nuxtjs/axios'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-analytics'],
   googleAnalytics: {
     id: 'UA-153177112-1'
   }

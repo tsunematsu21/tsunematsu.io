@@ -1,8 +1,6 @@
 <template>
   <div class="has-text-centered">
-    <h1 class="title">
-      <i class="fas fa-running" /> About Me
-    </h1>
+    <h1 class="title"><i class="fas fa-running" /> About Me</h1>
     <p class="subtitle">
       2B || !2B
     </p>
@@ -13,27 +11,36 @@
           <section class="content has-text-centered">
             <h2><i class="fas fa-at" />tsunematsu21</h2>
             <p>
-              I'm Japanese coke drinking IT infrastructure engineer
-              of company based in Tokyo, Japan.<br>
-              On January 1st, 1994, I was born in the jungle and raised by a gorilla.<br>
-              One day, I acquired wisdom by eating the legendary banana<br>
+              I'm Japanese coke drinking IT infrastructure engineer of company
+              based in Tokyo, Japan.<br />
+              On January 1st, 1994, I was born in the jungle and raised by a
+              gorilla.<br />
+              One day, I acquired wisdom by eating the legendary banana<br />
               and decided become to awesome engineer that useful for people.
             </p>
             <div class="buttons justify-content-center">
-              <a href="https://twitter.com/tsunematsu21" target="_blank" class="button is-twitter is-">
+              <a
+                href="https://twitter.com/tsunematsu21"
+                target="_blank"
+                class="button is-twitter is-"
+              >
                 <span class="icon">
                   <i class="fab fa-twitter" />
                 </span>
                 <span>Twitter</span>
               </a>
-              <a href="https://github.com/tsunematsu21" target="_blank" class="button is-github is-">
+              <a
+                href="https://github.com/tsunematsu21"
+                target="_blank"
+                class="button is-github is-"
+              >
                 <span class="icon">
                   <i class="fab fa-github" />
                 </span>
                 <span>GitHub</span>
               </a>
             </div>
-            <hr>
+            <hr />
             <div class="columns is-desktop">
               <div class="column">
                 <section class="has-text-centered">
@@ -42,8 +49,13 @@
                   </h3>
                   <ol class="has-text-left">
                     <li>Network programming with Python for SDN (OpenFlow)</li>
-                    <li>Database administration for Oracle, MySQL and PostgreSQL</li>
-                    <li>Designing, constructing and maintaining the infrastructure on AWS</li>
+                    <li>
+                      Database administration for Oracle, MySQL and PostgreSQL
+                    </li>
+                    <li>
+                      Designing, constructing and maintaining the infrastructure
+                      on AWS
+                    </li>
                   </ol>
                 </section>
               </div>
@@ -53,11 +65,11 @@
                     <i class="fas fa-user-secret" /> Special ability
                   </h3>
                   <p class="has-text-left">
-                    I can transform into legendary warriors known as the Cure Gorilla.
-                    With the assistance of creatures known as fairies,
-                    use their physical powers and enhanced Banana to fight against evil forces
-                    and organizations who create monsters to bring misery
-                    to the Earth and further their plans.
+                    I can transform into legendary warriors known as the Cure
+                    Gorilla. With the assistance of creatures known as fairies,
+                    use their physical powers and enhanced Banana to fight
+                    against evil forces and organizations who create monsters to
+                    bring misery to the Earth and further their plans.
                   </p>
                 </section>
               </div>
@@ -70,27 +82,29 @@
                   </h4>
                   <ul class="has-text-left">
                     <li>
-                      <b>Programming:</b><br>
+                      <b>Programming:</b><br />
                       Ruby / Python / Node.js(TypeScript)
                     </li>
                     <li>
-                      <b>Database:</b><br>
-                      Oracle / MySQL / PostgreSQL / Amazon RDS / Amazon Aurora / Amazon DynamoDB
+                      <b>Database:</b><br />
+                      Oracle / MySQL / PostgreSQL / Amazon RDS / Amazon Aurora /
+                      Amazon DynamoDB
                     </li>
                     <li>
-                      <b>AWS:</b><br>
-                      EC2 / RDS / S3 / ELB / CloudFront / Lambda / API Gateway / Code Bros.
+                      <b>AWS:</b><br />
+                      EC2 / RDS / S3 / ELB / CloudFront / Lambda / API Gateway /
+                      Code Bros.
                     </li>
                     <li>
-                      <b>IaC:</b><br>
+                      <b>IaC:</b><br />
                       Terraform / CloudFormation / Ansible / Serverspec / AWSpec
                     </li>
                     <li>
-                      <b>Monitoring:</b><br>
+                      <b>Monitoring:</b><br />
                       Zabbix / Mackerel / CloudWatch
                     </li>
                     <li>
-                      <b>Other:</b><br>
+                      <b>Other:</b><br />
                       Git / Docker
                     </li>
                   </ul>
@@ -107,7 +121,7 @@
                     <li>Golang</li>
                   </ul>
                 </section>
-                <br>
+                <br />
                 <section class="has-text-centered">
                   <h4 class="has-text-primary">
                     <i class="fas fa-heart" />
@@ -154,7 +168,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  async asyncData ({ $axios }) {
+  async asyncData({ $axios }) {
     const user = await $axios.$get('https://api.github.com/users/tsunematsu21')
     return {
       avatar_url: user.avatar_url

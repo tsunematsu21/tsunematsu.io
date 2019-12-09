@@ -12,6 +12,6 @@
       </span>
       <span>About Me</span>
     </router-link>
-    <br>
+    <br />
   </div>
 </template>

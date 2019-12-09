@@ -1,17 +1,21 @@
 <template>
   <div class="has-text-centered">
-    <h1 class="title">
-      <i class="fas fa-book-open" /> Portfolio
-    </h1>
+    <h1 class="title"><i class="fas fa-book-open" /> Portfolio</h1>
     <p class="subtitle">
       :(){ :|:& };:
     </p>
     <div class="columns">
       <div class="column is-one-third-desktop">
-        <RepositoryCard repo="tsunematsu21.github.io" img="https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6" />
+        <RepositoryCard
+          repo="tsunematsu21.github.io"
+          img="https://repository-images.githubusercontent.com/223420994/8d74bb00-0de9-11ea-8b8d-68378c9ce6f6"
+        />
       </div>
       <div class="column is-one-third-desktop">
-        <RepositoryCard repo="actions-publish-gh-pages" img="https://repository-images.githubusercontent.com/223547340/357ba880-0efe-11ea-91a8-4d5cfb245a67" />
+        <RepositoryCard
+          repo="actions-publish-gh-pages"
+          img="https://repository-images.githubusercontent.com/223547340/357ba880-0efe-11ea-91a8-4d5cfb245a67"
+        />
       </div>
     </div>
   </div>

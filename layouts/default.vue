@@ -5,7 +5,11 @@
         <div class="container">
           <nav class="navbar is-spaced is-primary" role="navigation">
             <div class="navbar-brand">
-              <nuxt-link to="/" active-class="" class="navbar-item has-text-weight-bold">
+              <nuxt-link
+                to="/"
+                active-class=""
+                class="navbar-item has-text-weight-bold"
+              >
                 tsunematsu21
               </nuxt-link>
               <a
@@ -22,7 +26,11 @@
               </a>
             </div>
 
-            <div id="navbar-menu" :class="{'is-active': isActive}" class="navbar-menu">
+            <div
+              id="navbar-menu"
+              :class="{ 'is-active': isActive }"
+              class="navbar-menu"
+            >
               <div class="navbar-end">
                 <nuxt-link to="/about" class="navbar-item">
                   <span class="icon">
@@ -56,13 +64,21 @@
     <footer class="footer has-background-dark has-text-light">
       <div class="content has-text-centered">
         <div class="buttons justify-content-center">
-          <a href="https://twitter.com/tsunematsu21" target="_blank" class="button is-white is-outlined">
+          <a
+            href="https://twitter.com/tsunematsu21"
+            target="_blank"
+            class="button is-white is-outlined"
+          >
             <span class="icon">
               <i class="fab fa-twitter" />
             </span>
             <span>Twitter</span>
           </a>
-          <a href="https://github.com/tsunematsu21" target="_blank" class="button is-white is-outlined">
+          <a
+            href="https://github.com/tsunematsu21"
+            target="_blank"
+            class="button is-white is-outlined"
+          >
             <span class="icon">
               <i class="fab fa-github" />
             </span>
@@ -71,10 +87,27 @@
         </div>
         <p>
           Handcrafted with <i class="fas fa-heart" /> by
-          <a href="https://github.com/tsunematsu21" target="_blank" class="has-text-light"><b>tsunematsu21</b></a>.<br>
-          Made with <a href="https://nuxtjs.org" target="_blank" class="has-text-light"><b>Nuxt.js</b></a> &
-          <a href="https://bulma.io" target="_blank" class="has-text-light"><b>Bulma</b></a>.<br>
-          Hosted on <a href="https://pages.github.com" target="_blank" class="has-text-light"><b>GitHub Pages</b></a>.
+          <a
+            href="https://github.com/tsunematsu21"
+            target="_blank"
+            class="has-text-light"
+            ><b>tsunematsu21</b></a
+          >.<br />
+          Made with
+          <a href="https://nuxtjs.org" target="_blank" class="has-text-light"
+            ><b>Nuxt.js</b></a
+          >
+          &
+          <a href="https://bulma.io" target="_blank" class="has-text-light"
+            ><b>Bulma</b></a
+          >.<br />
+          Hosted on
+          <a
+            href="https://pages.github.com"
+            target="_blank"
+            class="has-text-light"
+            ><b>GitHub Pages</b></a
+          >.
         </p>
       </div>
     </footer>
@@ -85,14 +118,14 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data () {
+  data() {
     const isActive: boolean = false
     return {
       isActive
     }
   },
   methods: {
-    toggleNavBar () {
+    toggleNavBar() {
       this.isActive = !this.isActive
     }
   }
