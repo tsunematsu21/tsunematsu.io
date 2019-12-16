@@ -22,7 +22,7 @@
               <a
                 href="https://twitter.com/tsunematsu21"
                 target="_blank"
-                class="button is-twitter is-"
+                class="button is-twitter"
               >
                 <span class="icon">
                   <i class="fab fa-twitter" />
@@ -32,7 +32,7 @@
               <a
                 href="https://github.com/tsunematsu21"
                 target="_blank"
-                class="button is-github is-"
+                class="button is-github"
               >
                 <span class="icon">
                   <i class="fab fa-github" />
