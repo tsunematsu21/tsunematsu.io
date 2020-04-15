@@ -48,6 +48,14 @@
                     Portfolio
                   </span>
                 </nuxt-link>
+                <nuxt-link to="/nagesen" class="navbar-item">
+                  <span class="icon">
+                    <i class="fas fa-coins" />
+                  </span>
+                  <span>
+                    Support me
+                  </span>
+                </nuxt-link>
               </div>
             </div>
           </nav>
