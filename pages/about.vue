@@ -11,8 +11,8 @@
           <section class="content has-text-centered">
             <h2><i class="fas fa-at" />tsunematsu21</h2>
             <p>
-              I'm Japanese coke drinking IT infrastructure engineer of company
-              based in Tokyo, Japan.<br />
+              I'm Japanese coke drinking IT infrastructure engineer based in
+              Tokyo, Japan.<br />
               On January 1st, 1994, I was born in the jungle and raised by a
               gorilla.<br />
               One day, I acquired wisdom by eating the legendary banana<br />
