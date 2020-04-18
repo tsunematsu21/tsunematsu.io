@@ -100,6 +100,16 @@
             </span>
             <span>GitHub</span>
           </a>
+          <a
+            href="https://www.instagram.com/tsunematsu21"
+            target="_blank"
+            class="button is-white is-outlined"
+          >
+            <span class="icon">
+              <i class="fab fa-instagram" />
+            </span>
+            <span>Instagram</span>
+          </a>
         </div>
         <p>
           Handcrafted with <i class="fas fa-heart" /> by

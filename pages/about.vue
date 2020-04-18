@@ -45,6 +45,16 @@
                 </span>
                 <span>GitHub</span>
               </a>
+              <a
+                href="https://www.instagram.com/tsunematsu21"
+                target="_blank"
+                class="button is-instagram"
+              >
+                <span class="icon">
+                  <i class="fab fa-instagram" />
+                </span>
+                <span>Instagram</span>
+              </a>
             </div>
             <hr />
             <div class="columns is-desktop">
