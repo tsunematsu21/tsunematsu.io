@@ -10,7 +10,7 @@
                 active-class=""
                 class="navbar-item has-text-weight-bold"
               >
-                tsunematsu21
+                tsunematsu.io
               </nuxt-link>
               <a
                 role="button"
@@ -33,24 +33,11 @@
             >
               <div class="navbar-end">
                 <NavbarLinkItem
-                  name="About me"
-                  path="/about"
-                  classes="fas fa-running"
-                />
-                <NavbarLinkItem
-                  name="Portfolio"
-                  path="/portfolio"
-                  classes="fas fa-book-open"
-                />
-                <NavbarLinkItem
-                  name="Say hello"
-                  path="/contact"
-                  classes="fas fa-envelope"
-                />
-                <NavbarLinkItem
-                  name="Support me"
-                  path="/nagesen"
-                  classes="fas fa-coins"
+                  v-for="item in navbarLinkItems"
+                  :key="item.name"
+                  :name="item.name"
+                  :path="item.path"
+                  :classes="item.classes"
                 />
               </div>
             </div>
@@ -67,61 +54,37 @@
     </section>
     <footer class="footer has-background-dark has-text-light">
       <div class="content has-text-centered">
-        <div class="buttons justify-content-center">
-          <a
-            href="https://twitter.com/tsunematsu21"
-            target="_blank"
-            class="button is-white is-outlined"
-          >
-            <span class="icon">
-              <i class="fab fa-twitter" />
-            </span>
-            <span>Twitter</span>
-          </a>
-          <a
-            href="https://github.com/tsunematsu21"
-            target="_blank"
-            class="button is-white is-outlined"
-          >
-            <span class="icon">
-              <i class="fab fa-github" />
-            </span>
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.instagram.com/tsunematsu21"
-            target="_blank"
-            class="button is-white is-outlined"
-          >
-            <span class="icon">
-              <i class="fab fa-instagram" />
-            </span>
-            <span>Instagram</span>
-          </a>
-        </div>
+        <SocialButtons
+          buttons-classes="justify-content-center"
+          button-classes="is-white is-outlined"
+        />
         <p>
           Handcrafted with <i class="fas fa-heart" /> by
           <a
             href="https://github.com/tsunematsu21"
             target="_blank"
             class="has-text-light"
-            ><b>tsunematsu21</b></a
+          >
+            <b>tsunematsu21</b> </a
           >.<br />
           Made with
-          <a href="https://nuxtjs.org" target="_blank" class="has-text-light"
-            ><b>Nuxt.js</b></a
-          >
+          <a href="https://nuxtjs.org" target="_blank" class="has-text-light">
+            <b>Nuxt.js</b>
+          </a>
           &
-          <a href="https://bulma.io" target="_blank" class="has-text-light"
-            ><b>Bulma</b></a
-          >.<br />
+          <a href="https://bulma.io" target="_blank" class="has-text-light">
+            <b>Bulma</b>
+          </a>
+          .<br />
           Hosted on
           <a
             href="https://pages.github.com"
             target="_blank"
             class="has-text-light"
-            ><b>GitHub Pages</b></a
-          >.
+          >
+            <b>GitHub Pages</b>
+          </a>
+          .
         </p>
       </div>
     </footer>
@@ -131,15 +94,38 @@
 <script lang="ts">
 import Vue from 'vue'
 import NavbarLinkItem from '~/components/NavbarLinkItem.vue'
+import SocialButtons from '~/components/SocialButtons.vue'
 
 export default Vue.extend({
   components: {
-    NavbarLinkItem
+    NavbarLinkItem,
+    SocialButtons
   },
   data() {
-    const isActive: boolean = false
     return {
-      isActive
+      isActive: false,
+      navbarLinkItems: [
+        {
+          name: 'About me',
+          path: '/about',
+          classes: 'fas fa-running'
+        },
+        {
+          name: 'Portfolio',
+          path: '/portfolio',
+          classes: 'fas fa-book-open'
+        },
+        {
+          name: 'Say hello',
+          path: '/contact',
+          classes: 'fas fa-envelope'
+        },
+        {
+          name: 'Support me',
+          path: '/nagesen',
+          classes: 'fas fa-coins'
+        }
+      ]
     }
   },
   methods: {
