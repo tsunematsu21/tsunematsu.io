@@ -19,6 +19,12 @@
               and decided become to awesome engineer that useful for people.
             </p>
             <div class="buttons justify-content-center">
+              <nuxt-link to="/contact" class="button">
+                <span class="icon">
+                  <i class="fas fa-envelope" />
+                </span>
+                <span>Say hello</span>
+              </nuxt-link>
               <a
                 href="https://twitter.com/tsunematsu21"
                 target="_blank"
