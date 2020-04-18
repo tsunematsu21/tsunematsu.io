@@ -32,38 +32,26 @@
               class="navbar-menu"
             >
               <div class="navbar-end">
-                <nuxt-link to="/about" class="navbar-item">
-                  <span class="icon">
-                    <i class="fas fa-running" />
-                  </span>
-                  <span>
-                    About me
-                  </span>
-                </nuxt-link>
-                <nuxt-link to="/portfolio" class="navbar-item">
-                  <span class="icon">
-                    <i class="fas fa-book-open" />
-                  </span>
-                  <span>
-                    Portfolio
-                  </span>
-                </nuxt-link>
-                <nuxt-link to="/contact" class="navbar-item">
-                  <span class="icon">
-                    <i class="fas fa-envelope" />
-                  </span>
-                  <span>
-                    Say hello
-                  </span>
-                </nuxt-link>
-                <nuxt-link to="/nagesen" class="navbar-item">
-                  <span class="icon">
-                    <i class="fas fa-coins" />
-                  </span>
-                  <span>
-                    Support me
-                  </span>
-                </nuxt-link>
+                <NavbarLinkItem
+                  name="About me"
+                  path="/about"
+                  classes="fas fa-running"
+                />
+                <NavbarLinkItem
+                  name="Portfolio"
+                  path="/portfolio"
+                  classes="fas fa-book-open"
+                />
+                <NavbarLinkItem
+                  name="Say hello"
+                  path="/contact"
+                  classes="fas fa-envelope"
+                />
+                <NavbarLinkItem
+                  name="Support me"
+                  path="/nagesen"
+                  classes="fas fa-coins"
+                />
               </div>
             </div>
           </nav>
@@ -142,8 +130,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import NavbarLinkItem from '~/components/NavbarLinkItem.vue'
 
 export default Vue.extend({
+  components: {
+    NavbarLinkItem
+  },
   data() {
     const isActive: boolean = false
     return {
