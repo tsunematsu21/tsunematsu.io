@@ -60,13 +60,16 @@
                       >my works</nuxt-link
                     >. It's encourage me more than you think. Accepting your
                     feedback in
+                    <nuxt-link to="/contact" class="has-text-primary">
+                      contact
+                    </nuxt-link>
+                    page and
                     <a
                       href="https://twitter.com/tsunematsu21"
                       target="_blank"
                       class="has-text-primary"
                       >Twitter</a
-                    >
-                    and Issue (in each GitHub repository).
+                    >.
                   </p>
                 </section>
               </div>
