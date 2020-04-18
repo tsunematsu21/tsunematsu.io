@@ -48,6 +48,14 @@
                     Portfolio
                   </span>
                 </nuxt-link>
+                <nuxt-link to="/contact" class="navbar-item">
+                  <span class="icon">
+                    <i class="fas fa-envelope" />
+                  </span>
+                  <span>
+                    Say hello
+                  </span>
+                </nuxt-link>
                 <nuxt-link to="/nagesen" class="navbar-item">
                   <span class="icon">
                     <i class="fas fa-coins" />
