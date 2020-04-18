@@ -83,16 +83,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  async asyncData({ $axios }) {
-    const user = await $axios.$get('https://api.github.com/users/tsunematsu21')
-    return {
-      avatar_url: user.avatar_url
-    }
-  }
-})
-</script>
