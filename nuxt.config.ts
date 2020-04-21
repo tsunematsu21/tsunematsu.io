@@ -14,7 +14,8 @@ const nuxtConfig: Configuration = {
           "I'm Japanese coke drinking IT infrastructure engineer based in Tokyo, Japan."
       },
       { name: 'theme-color', content: '#ff6f61' }
-    ]
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   loading: { color: '#fff' },
   css: [
