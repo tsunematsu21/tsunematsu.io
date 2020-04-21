@@ -19,6 +19,8 @@ $twitter: #55acee;
 $twitter-invert: findColorInvert($twitter);
 $github: #333;
 $github-invert: findColorInvert($github);
+$medium: #00ab6c;
+$medium-invert: findColorInvert($medium);
 $instagram: #c13584;
 $instagram-invert: findColorInvert($instagram);
 
@@ -27,6 +29,7 @@ $instagram-invert: findColorInvert($instagram);
 $addColors: (
   "twitter":($twitter, $twitter-invert),
   "github": ($github, $github-invert),
+  "medium-com": ($medium, $medium-invert),
   "instagram": ($instagram, $instagram-invert)
 );
 $colors: map-merge($colors, $addColors);

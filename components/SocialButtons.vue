@@ -53,6 +53,12 @@ export default Vue.extend({
           buttonClasses: ['is-github']
         },
         {
+          name: 'Medium',
+          href: 'https://medium.com/@tsunematsu21',
+          iconClasses: 'fab fa-medium',
+          buttonClasses: ['is-medium-com']
+        },
+        {
           name: 'Instagram',
           href: 'https://www.instagram.com/tsunematsu21',
           iconClasses: 'fab fa-instagram',
