@@ -65,7 +65,7 @@
             target="_blank"
             class="has-text-light"
           >
-            <b>tsunematsu21</b> </a
+            <b>tsunematsu21</b></a
           >.<br />
           Made with
           <a href="https://nuxtjs.org" target="_blank" class="has-text-light">
@@ -73,18 +73,16 @@
           </a>
           &
           <a href="https://bulma.io" target="_blank" class="has-text-light">
-            <b>Bulma</b>
-          </a>
-          .<br />
+            <b>Bulma</b></a
+          >.<br />
           Hosted on
           <a
             href="https://pages.github.com"
             target="_blank"
             class="has-text-light"
           >
-            <b>GitHub Pages</b>
-          </a>
-          .
+            <b>GitHub Pages</b></a
+          >.
         </p>
       </div>
     </footer>
