@@ -95,6 +95,7 @@
                     <i class="fas fa-brain" /> Currently learning
                   </h4>
                   <ul class="has-text-left">
+                    <li>English</li>
                     <li>Micro Services</li>
                     <li>Kubernetes</li>
                     <li>Golang</li>
