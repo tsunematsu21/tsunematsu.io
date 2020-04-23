@@ -97,7 +97,6 @@
                   <ul class="has-text-left">
                     <li>English</li>
                     <li>Micro Services</li>
-                    <li>Kubernetes</li>
                     <li>Golang</li>
                   </ul>
                 </section>
