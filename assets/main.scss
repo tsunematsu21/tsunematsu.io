@@ -23,6 +23,8 @@ $medium: #00ab6c;
 $medium-invert: findColorInvert($medium);
 $instagram: #c13584;
 $instagram-invert: findColorInvert($instagram);
+$ko-fi: #29abe0;
+$ko-fi-invert: findColorInvert($ko-fi);
 
 // 5. Add new color variables to the color map.
 @import "~bulma/sass/utilities/derived-variables";
@@ -30,7 +32,8 @@ $addColors: (
   "twitter":($twitter, $twitter-invert),
   "github": ($github, $github-invert),
   "medium-com": ($medium, $medium-invert),
-  "instagram": ($instagram, $instagram-invert)
+  "instagram": ($instagram, $instagram-invert),
+  "ko-fi": ($ko-fi, $ko-fi-invert)
 );
 $colors: map-merge($colors, $addColors);
 

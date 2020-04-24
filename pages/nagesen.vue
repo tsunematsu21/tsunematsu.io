@@ -49,7 +49,31 @@
                   </div>
                 </section>
               </div>
-              <div class="column">
+              <div class="column is-desktop">
+                <section class="has-text-centered">
+                  <h3 class="has-text-primary">
+                    ko-fi
+                  </h3>
+                  <p class="has-text-left">
+                    On my ko-fi page, accepting support by price of a coffee. It
+                    is friendly and free way for support my work. Please visit
+                    my ko-fi page from the button below.<br />
+                  </p>
+                  <div class="has-text-centered">
+                    <a
+                      href="https://ko-fi.com/tsunematsu21"
+                      target="_blank"
+                      class="button is-ko-fi"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-coffee" />
+                      </span>
+                      <span>Support Me on Ko-fi</span>
+                    </a>
+                  </div>
+                </section>
+              </div>
+              <div class="column is-desktop">
                 <section class="has-text-centered">
                   <h3 class="has-text-primary">
                     Feedback
@@ -73,6 +97,8 @@
                   </p>
                 </section>
               </div>
+            </div>
+            <div class="columns">
               <div class="column is-desktop">
                 <section class="has-text-centered">
                   <h3 class="has-text-primary">Other option</h3>
