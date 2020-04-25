@@ -2,7 +2,7 @@
   <div class="has-text-centered">
     <h1 class="title"><i class="fas fa-book-open" /> Portfolio</h1>
     <p class="subtitle">
-      :(){ :|:& };:
+      Showcase my works
     </p>
     <div class="columns">
       <div class="column is-one-third-desktop">
