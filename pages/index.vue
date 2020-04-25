@@ -1,10 +1,10 @@
 <template>
   <div class="has-text-centered">
     <h1 class="title">
-      tsunematsu21
+      The coke drinking IT engineer
     </h1>
     <p class="subtitle">
-      Power of the Gorilla!
+      On this site, introduce my profile, and showcase my work made as a hobby.
     </p>
     <router-link to="about" class="button is-white is-outlined">
       <span class="icon">
