@@ -13,16 +13,67 @@
             <p>
               I'm Japanese coke drinking IT infrastructure engineer based in
               Tokyo, Japan.<br />
-              On January 1st, 1994, I was born in the jungle and raised by a
-              gorilla.<br />
-              One day, I acquired wisdom by eating the legendary banana<br />
-              and decided become to awesome engineer that useful for people.
             </p>
-            <SocialButtons buttons-classes="justify-content-center" />
+            <small>Follow me!</small>
+            <SocialButtons
+              buttons-classes="justify-content-center"
+              button-classes="is-black is-outlined is-small"
+              is-icon-only="true"
+            />
             <hr />
+            <div class="columns">
+              <div class="column is-flex">
+                <section>
+                  <h3><i class="fas fa-walking" /> Bio</h3>
+                  <p class="has-text-left">
+                    On January 1st, 1994, I was born in the jungle and raised by
+                    a gorilla. One day, I acquired wisdom by eating the
+                    legendary banana and decided become to awesome engineer that
+                    useful for people.<br />
+                    "<em>Power of the Gorilla!</em>" is my favorite phrase.
+                  </p>
+                </section>
+              </div>
+              <div class="column is-flex">
+                <section>
+                  <h3><i class="fas fa-lightbulb" /> Hobby</h3>
+                  <p class="has-text-left">
+                    My hobby is developing systems and software. On this site,
+                    showcase my work made as a hobby, so I want you to see my
+                    portfolio.
+                  </p>
+                </section>
+                <router-link
+                  to="portfolio"
+                  class="button is-primary is-outlined"
+                >
+                  <span class="icon">
+                    <i class="fas fa-running" />
+                  </span>
+                  <span>Show my Portfolio</span>
+                </router-link>
+              </div>
+              <div class="column is-flex">
+                <section>
+                  <h3><i class="fas fa-envelope" /> Get in touch</h3>
+                  <p class="has-text-left">
+                    Want to get in touch? I'm not currently looking for a job,
+                    but welcome feedback and chat.
+                  </p>
+                </section>
+                <router-link to="contact" class="button is-primary is-outlined">
+                  <span class="icon">
+                    <i class="fas fa-envelope" />
+                  </span>
+                  <span>Say hello</span>
+                </router-link>
+              </div>
+            </div>
+            <hr />
+            <h2>Details</h2>
             <div class="columns is-desktop">
               <div class="column">
-                <section class="has-text-centered">
+                <section>
                   <h3 class="has-text-primary">
                     <i class="fas fa-briefcase" /> Work experience
                   </h3>
@@ -39,7 +90,7 @@
                 </section>
               </div>
               <div class="column is-desktop">
-                <section class="has-text-centered">
+                <section>
                   <h3 class="has-text-primary">
                     <i class="fas fa-user-secret" /> Special ability
                   </h3>
@@ -55,7 +106,7 @@
             </div>
             <div class="columns">
               <div class="column is-half is-desktop">
-                <section class="has-text-centered">
+                <section>
                   <h4 class="has-text-primary">
                     <i class="fas fa-tools" /> Technical Skills
                   </h4>
@@ -90,7 +141,7 @@
                 </section>
               </div>
               <div class="column is-desktop">
-                <section class="has-text-centered">
+                <section>
                   <h4 class="has-text-primary">
                     <i class="fas fa-brain" /> Currently learning
                   </h4>
@@ -101,7 +152,7 @@
                   </ul>
                 </section>
                 <br />
-                <section class="has-text-centered">
+                <section>
                   <h4 class="has-text-primary">
                     <i class="fas fa-heart" />
                     Recommended PreCures
@@ -116,7 +167,7 @@
                 </section>
               </div>
               <div class="column is-desktop">
-                <section class="has-text-centered">
+                <section>
                   <h4 class="has-text-primary">
                     <i class="fas fa-book-open" /> Scriptures
                   </h4>
@@ -173,5 +224,12 @@ export default Vue.extend({
   border-color: white;
   border-image: initial;
   border-radius: 100%;
+}
+
+div.column.is-flex {
+  flex-direction: column;
+  > .button {
+    margin-top: auto;
+  }
 }
 </style>
