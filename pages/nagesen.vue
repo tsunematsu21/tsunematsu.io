@@ -52,12 +52,12 @@
               <div class="column is-desktop">
                 <section class="has-text-centered">
                   <h3 class="has-text-primary">
-                    ko-fi
+                    Ko-fi
                   </h3>
                   <p class="has-text-left">
-                    On my ko-fi page, accepting support by price of a coffee. It
+                    On my Ko-fi page, accepting support by price of a coffee. It
                     is friendly and free way for support my work. Please visit
-                    my ko-fi page from the button below.<br />
+                    my Ko-fi page from the button below.<br />
                   </p>
                   <div class="has-text-centered">
                     <a
@@ -87,14 +87,13 @@
                     <nuxt-link to="/contact" class="has-text-primary">
                       contact
                     </nuxt-link>
-                    page and
-                    <a
-                      href="https://twitter.com/tsunematsu21"
-                      target="_blank"
-                      class="has-text-primary"
-                      >Twitter</a
-                    >.
+                    page and social media.
                   </p>
+                  <SocialButtons
+                    buttons-classes="justify-content-center"
+                    button-classes="is-black is-outlined is-small"
+                    is-icon-only="true"
+                  />
                 </section>
               </div>
             </div>
@@ -112,3 +111,14 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import SocialButtons from '~/components/SocialButtons.vue'
+
+export default Vue.extend({
+  components: {
+    SocialButtons
+  }
+})
+</script>
