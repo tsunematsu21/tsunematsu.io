@@ -11,7 +11,9 @@
       <span class="icon">
         <i :class="item.iconClasses" />
       </span>
-      <span>{{ item.name }}</span>
+      <span v-if="!isIconOnly">
+        {{ item.name }}
+      </span>
     </a>
   </div>
 </template>
@@ -35,6 +37,11 @@ export default Vue.extend({
       type: String,
       required: false,
       default: '_blank'
+    },
+    isIconOnly: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   data() {
