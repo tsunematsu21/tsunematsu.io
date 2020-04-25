@@ -70,17 +70,6 @@
           /></a>
         </span>
       </p>
-      <p class="card-footer-item">
-        <span>
-          Share on
-          <a
-            :href="`https://twitter.com/share?url=${html_url}`"
-            target="_blank"
-          >
-            Twitter <i class="fab fa-twitter"
-          /></a>
-        </span>
-      </p>
     </footer>
   </div>
 </template>
