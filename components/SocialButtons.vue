@@ -7,6 +7,7 @@
       :target="target"
       class="button"
       :class="buttonClasses || item.buttonClasses"
+      :title="item.name"
     >
       <span class="icon">
         <i :class="item.iconClasses" />
