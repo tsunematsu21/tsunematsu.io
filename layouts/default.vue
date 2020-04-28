@@ -114,7 +114,7 @@ export default Vue.extend({
           classes: 'fas fa-book-open'
         },
         {
-          name: 'Say hello',
+          name: 'Get in touch',
           path: '/contact',
           classes: 'fas fa-envelope'
         },
