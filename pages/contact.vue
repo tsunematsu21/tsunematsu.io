@@ -1,5 +1,23 @@
 <template>
   <div class="has-text-centered">
+    <div class="modal" :class="{ 'is-active': isActive }">
+      <div class="modal-background" @click="closeModal"></div>
+      <div class="modal-content">
+        <div class="box">
+          <section class="content">
+            <template v-if="hasError">
+              <h3><i class="fas fa-skull-crossbones" /> Failed...</h3>
+              <p>Error occurred...</p>
+            </template>
+            <template v-else>
+              <h3><i class="fas fa-thumbs-up" /> Success</h3>
+              <p>Thanks for your message!</p>
+            </template>
+          </section>
+          <button class="button" @click="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
     <h1 class="title"><i class="fas fa-envelope" /> Contact</h1>
     <p class="subtitle">
       Let's get in touch
@@ -106,10 +124,13 @@ import axios from 'axios'
 export default Vue.extend({
   data() {
     return {
+      isActive: false,
+      hasError: false,
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      messageClass: ''
     }
   },
   methods: {
@@ -119,14 +140,30 @@ export default Vue.extend({
         'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeoSwm1nyLq9twZApkFpyI8pHcRM1eZsCO7VBadRk8SD8JL9A/formResponse'
       const params = new FormData()
 
-      params.append('entry.1656591080', this.name)
-      params.append('entry.2052484463', this.email)
-      params.append('entry.1555034560', this.subject)
-      params.append('entry.576767999', this.message)
+      try {
+        // Post to google form
+        params.append('entry.1656591080', this.name)
+        params.append('entry.2052484463', this.email)
+        params.append('entry.1555034560', this.subject)
+        params.append('entry.576767999', this.message)
+        await axios.post(CORS_PROXY + GOOGLE_FORM_ACTION, params)
 
-      await axios.post(CORS_PROXY + GOOGLE_FORM_ACTION, params)
+        // Clear form
+        this.name = ''
+        this.email = ''
+        this.subject = ''
+        this.message = ''
 
-      this.$router.push('contact/thanks')
+        this.hasError = false
+      } catch (error) {
+        this.hasError = true
+      } finally {
+        // Open modal window
+        this.isActive = true
+      }
+    },
+    closeModal() {
+      this.isActive = false
     }
   }
 })
