@@ -7,56 +7,49 @@
     <div class="columns">
       <div class="column">
         <div id="avater" :style="`background-image: url(${avatar_url})`" />
-        <div class="card" style="padding-top: 96px;">
-          <div class="card-content">
-            <section class="content has-text-centered">
-              <h2><i class="fas fa-at" />tsunematsu21</h2>
-              <p>
-                I'm Japanese coke drinking IT infrastructure engineer based in
-                Tokyo, Japan.<br />
-              </p>
-              <p>
-                <small>Follow me!</small>
-                <SocialButtons
-                  buttons-classes="justify-content-center"
-                  button-classes="is-black is-outlined is-small"
-                  is-icon-only="true"
-                />
-              </p>
-            </section>
-          </div>
+        <div class="box" style="padding-top: 96px;">
+          <section class="content has-text-centered">
+            <h2><i class="fas fa-at" />tsunematsu21</h2>
+            <p>
+              I'm Japanese coke drinking IT infrastructure engineer based in
+              Tokyo, Japan.<br />
+              <br />
+              On January 1st, 1994, I was born in the jungle and raised by a
+              gorilla. <br />
+              One day, I acquired wisdom by eating the legendary banana and
+              decided become to awesome engineer that useful for people.<br />
+              "<em>Power of the Gorilla!</em>" is my favorite phrase.
+            </p>
+            <p>
+              <small>Follow me!</small>
+              <SocialButtons
+                buttons-classes="justify-content-center"
+                button-classes="is-black is-outlined is-small"
+                is-icon-only="true"
+              />
+            </p>
+          </section>
         </div>
       </div>
     </div>
     <div class="columns">
       <div class="column is-flex">
-        <div class="card is-flex">
-          <div class="card-content is-flex">
-            <section class="content">
-              <h3><i class="fas fa-walking" /> Bio</h3>
-              <p class="has-text-left">
-                On January 1st, 1994, I was born in the jungle and raised by a
-                gorilla. One day, I acquired wisdom by eating the legendary
-                banana and decided become to awesome engineer that useful for
-                people.<br />
-                "<em>Power of the Gorilla!</em>" is my favorite phrase.
-              </p>
-            </section>
-          </div>
-        </div>
-      </div>
-      <div class="column is-flex">
-        <div class="card is-flex">
-          <div class="card-content is-flex">
-            <section class="content">
-              <h3><i class="fas fa-lightbulb" /> Hobby</h3>
-              <p class="has-text-left">
-                My hobby is developing systems and software. On this site,
-                showcase my work made as a hobby, so I want you to see my
-                portfolio.
-              </p>
-            </section>
-            <router-link to="portfolio" class="button is-primary is-outlined">
+        <div class="card">
+          <section class="card-content ">
+            <h3 class="title has-text-black">
+              <i class="fas fa-book-open" /> Portfolio
+            </h3>
+            <p class="has-text-left">
+              My hobby is developing systems and software. On this site,
+              showcase my work made as a hobby, so I want you to see my
+              portfolio.
+            </p>
+          </section>
+          <div class="card-footer">
+            <router-link
+              to="portfolio"
+              class="card-footer-item has-text-primary"
+            >
               <span class="icon">
                 <i class="fas fa-running" />
               </span>
@@ -66,16 +59,18 @@
         </div>
       </div>
       <div class="column is-flex">
-        <div class="card is-flex">
-          <div class="card-content is-flex">
-            <section class="content">
-              <h3><i class="fas fa-envelope" /> Get in touch</h3>
-              <p class="has-text-left">
-                Want to get in touch? I'm not currently looking for a job, but
-                welcome feedback and chat.
-              </p>
-            </section>
-            <router-link to="contact" class="button is-primary is-outlined">
+        <div class="card">
+          <section class="card-content">
+            <h3 class="title has-text-black">
+              <i class="fas fa-envelope" /> Get in touch
+            </h3>
+            <p class="has-text-left">
+              Want to get in touch? I'm not currently looking for a job, but
+              welcome feedback and chat.
+            </p>
+          </section>
+          <div class="card-footer">
+            <router-link to="contact" class="card-footer-item has-text-primary">
               <span class="icon">
                 <i class="fas fa-envelope" />
               </span>
@@ -84,129 +79,148 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <section class="content">
-          <h2>Details</h2>
-          <div class="columns is-desktop">
-            <div class="column">
-              <section>
-                <h3 class="has-text-primary">
-                  <i class="fas fa-briefcase" /> Work experience
-                </h3>
-                <ol class="has-text-left">
-                  <li>Network programming with Python for SDN (OpenFlow)</li>
-                  <li>
-                    Database administration for Oracle, MySQL and PostgreSQL
-                  </li>
-                  <li>
-                    Designing, constructing and maintaining the infrastructure
-                    on AWS
-                  </li>
-                </ol>
-              </section>
-            </div>
-            <div class="column is-desktop">
-              <section>
-                <h3 class="has-text-primary">
-                  <i class="fas fa-user-secret" /> Special ability
-                </h3>
-                <p class="has-text-left">
-                  I can transform into legendary warriors known as the Cure
-                  Gorilla. With the assistance of creatures known as fairies,
-                  use their physical powers and enhanced Banana to fight against
-                  evil forces and organizations who create monsters to bring
-                  misery to the Earth and further their plans.
-                </p>
-              </section>
-            </div>
+      <div class="column is-flex">
+        <div class="card">
+          <section class="card-content">
+            <h3 class="title has-text-black">
+              <i class="fas fa-bullhorn" /> Support me
+            </h3>
+            <p class="has-text-left">
+              Please support me if you like. Gladly accepting support in several
+              ways.
+            </p>
+          </section>
+          <div class="card-footer">
+            <router-link to="contact" class="card-footer-item has-text-primary">
+              <span class="icon">
+                <i class="fas fa-heart" />
+              </span>
+              <span>Would you support me?</span>
+            </router-link>
           </div>
-          <div class="columns">
-            <div class="column is-half is-desktop">
-              <section>
-                <h4 class="has-text-primary">
-                  <i class="fas fa-tools" /> Technical Skills
-                </h4>
-                <ul class="has-text-left">
-                  <li>
-                    <b>Programming:</b><br />
-                    Ruby / Python / Node.js(TypeScript)
-                  </li>
-                  <li>
-                    <b>Database:</b><br />
-                    Oracle / MySQL / PostgreSQL / Amazon RDS / Amazon Aurora /
-                    Amazon DynamoDB
-                  </li>
-                  <li>
-                    <b>AWS:</b><br />
-                    EC2 / RDS / S3 / ELB / CloudFront / Lambda / API Gateway /
-                    Code Bros.
-                  </li>
-                  <li>
-                    <b>IaC:</b><br />
-                    Terraform / CloudFormation / Ansible / Serverspec / AWSpec
-                  </li>
-                  <li>
-                    <b>Monitoring:</b><br />
-                    Zabbix / Mackerel / CloudWatch
-                  </li>
-                  <li>
-                    <b>Other:</b><br />
-                    Git / Docker
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="column is-desktop">
-              <section>
-                <h4 class="has-text-primary">
-                  <i class="fas fa-brain" /> Currently learning
-                </h4>
-                <ul class="has-text-left">
-                  <li>English</li>
-                  <li>Micro Services</li>
-                  <li>Golang</li>
-                </ul>
-              </section>
-              <br />
-              <section>
-                <h4 class="has-text-primary">
-                  <i class="fas fa-heart" />
-                  Recommended PreCures
-                </h4>
-                <ul class="has-text-left">
-                  <li>Cure Lemonade (Yes! PreCure 5)</li>
-                  <li>Cure Sunny (Smile PreCure!)</li>
-                  <li>Cure Diamond (DokiDoki! PreCure)</li>
-                  <li>Cure Twinkle (Go! Princess PreCure)</li>
-                  <li>Cure Macaron (Kirakira PreCure a la Mode)</li>
-                </ul>
-              </section>
-            </div>
-            <div class="column is-desktop">
-              <section>
-                <h4 class="has-text-primary">
-                  <i class="fas fa-book-open" /> Scriptures
-                </h4>
-                <ul class="has-text-left">
-                  <li>Baki the Grappler</li>
-                  <li>Black Lagoon</li>
-                  <li>Buso Renkin</li>
-                  <li>The Drifting Classroom</li>
-                  <li>Goodnight Punpun</li>
-                  <li>The Ghost in the Shell</li>
-                  <li>Hana No Zuborameshi</li>
-                  <li>Hellsing</li>
-                  <li>Oh My Goddess!</li>
-                  <li>Otome no Teikoku</li>
-                  <li>Shuden niwa Kaeshimasu</li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
+    </div>
+    <div class="box">
+      <section class="content">
+        <h2>Details</h2>
+        <div class="columns is-desktop">
+          <div class="column">
+            <section>
+              <h3 class="has-text-primary">
+                <i class="fas fa-briefcase" /> Work experience
+              </h3>
+              <ol class="has-text-left">
+                <li>Network programming with Python for SDN (OpenFlow)</li>
+                <li>
+                  Database administration for Oracle, MySQL and PostgreSQL
+                </li>
+                <li>
+                  Designing, constructing and maintaining the infrastructure on
+                  AWS
+                </li>
+              </ol>
+            </section>
+          </div>
+          <div class="column is-desktop">
+            <section>
+              <h3 class="has-text-primary">
+                <i class="fas fa-user-secret" /> Special ability
+              </h3>
+              <p class="has-text-left">
+                I can transform into legendary warriors known as the Cure
+                Gorilla. With the assistance of creatures known as fairies, use
+                their physical powers and enhanced Banana to fight against evil
+                forces and organizations who create monsters to bring misery to
+                the Earth and further their plans.
+              </p>
+            </section>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half is-desktop">
+            <section>
+              <h4 class="has-text-primary">
+                <i class="fas fa-tools" /> Technical Skills
+              </h4>
+              <ul class="has-text-left">
+                <li>
+                  <b>Programming:</b><br />
+                  Ruby / Python / Node.js(TypeScript)
+                </li>
+                <li>
+                  <b>Database:</b><br />
+                  Oracle / MySQL / PostgreSQL / Amazon RDS / Amazon Aurora /
+                  Amazon DynamoDB
+                </li>
+                <li>
+                  <b>AWS:</b><br />
+                  EC2 / RDS / S3 / ELB / CloudFront / Lambda / API Gateway /
+                  Code Bros.
+                </li>
+                <li>
+                  <b>IaC:</b><br />
+                  Terraform / CloudFormation / Ansible / Serverspec / AWSpec
+                </li>
+                <li>
+                  <b>Monitoring:</b><br />
+                  Zabbix / Mackerel / CloudWatch
+                </li>
+                <li>
+                  <b>Other:</b><br />
+                  Git / Docker
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="column is-desktop">
+            <section>
+              <h4 class="has-text-primary">
+                <i class="fas fa-brain" /> Currently learning
+              </h4>
+              <ul class="has-text-left">
+                <li>English</li>
+                <li>Micro Services</li>
+                <li>Golang</li>
+              </ul>
+            </section>
+            <br />
+            <section>
+              <h4 class="has-text-primary">
+                <i class="fas fa-heart" />
+                Recommended PreCures
+              </h4>
+              <ul class="has-text-left">
+                <li>Cure Lemonade (Yes! PreCure 5)</li>
+                <li>Cure Sunny (Smile PreCure!)</li>
+                <li>Cure Diamond (DokiDoki! PreCure)</li>
+                <li>Cure Twinkle (Go! Princess PreCure)</li>
+                <li>Cure Macaron (Kirakira PreCure a la Mode)</li>
+              </ul>
+            </section>
+          </div>
+          <div class="column is-desktop">
+            <section>
+              <h4 class="has-text-primary">
+                <i class="fas fa-book-open" /> Scriptures
+              </h4>
+              <ul class="has-text-left">
+                <li>Baki the Grappler</li>
+                <li>Black Lagoon</li>
+                <li>Buso Renkin</li>
+                <li>The Drifting Classroom</li>
+                <li>Goodnight Punpun</li>
+                <li>The Ghost in the Shell</li>
+                <li>Hana No Zuborameshi</li>
+                <li>Hellsing</li>
+                <li>Oh My Goddess!</li>
+                <li>Otome no Teikoku</li>
+                <li>Shuden niwa Kaeshimasu</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -243,9 +257,10 @@ export default Vue.extend({
   border-radius: 100%;
 }
 
-div.card-content.is-flex {
+div.card {
+  display: flex;
   flex-direction: column;
-  > .button {
+  > .card-footer {
     margin-top: auto;
   }
 }
