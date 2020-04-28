@@ -4,106 +4,97 @@
     <p class="subtitle">
       Let's get in touch
     </p>
-    <div class="has-text-left">
-      <div class="card">
-        <div class="card-content">
-          <section class="content has-text-centered">
-            <h2><i class="fas fa-cat" /> Say hello</h2>
-            <p>
-              Want to get in touch? I'm not currently looking for a job, but
-              welcome feedback and chat.<br />
-              Fill out the form below and I will try my best to reply to you.
-            </p>
-          </section>
-          <form @submit.prevent="submit">
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">From</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <p class="control is-expanded has-icons-left">
-                    <input
-                      v-model="name"
-                      class="input"
-                      type="text"
-                      placeholder="Name"
-                      required
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-user"></i>
-                    </span>
-                  </p>
-                </div>
-                <div class="field">
-                  <p class="control is-expanded has-icons-left">
-                    <input
-                      v-model="email"
-                      class="input"
-                      type="email"
-                      placeholder="Email"
-                      required
-                    />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                  </p>
-                </div>
-              </div>
+    <div class="box">
+      <section class="content">
+        <h2><i class="fas fa-cat" /> Say hello</h2>
+        <p>
+          Want to get in touch? I'm not currently looking for a job, but welcome
+          feedback and chat.<br />
+          Fill out the form below and I will try my best to reply to you.
+        </p>
+      </section>
+      <form @submit.prevent="submit">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">From</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input
+                  v-model="name"
+                  class="input"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </p>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Subject</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <input
-                      v-model="subject"
-                      class="input"
-                      type="text"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input
+                  v-model="email"
+                  class="input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </p>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Message</label>
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <textarea
-                      v-model="message"
-                      class="textarea"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label">
-                <!-- Left empty for spacing -->
-              </div>
-              <div class="field-body">
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-primary">
-                      <span class="icon">
-                        <i class="fas fa-paper-plane" />
-                      </span>
-                      <span>Send</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Subject</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input v-model="subject" class="input" type="text" required />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Message</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea
+                  v-model="message"
+                  class="textarea"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <!-- Left empty for spacing -->
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <button class="button is-primary">
+                  <span class="icon">
+                    <i class="fas fa-paper-plane" />
+                  </span>
+                  <span>Send</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </template>
