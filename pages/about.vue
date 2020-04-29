@@ -86,12 +86,12 @@
               <i class="fas fa-bullhorn" /> Support me
             </h3>
             <p class="has-text-left">
-              Please support me if you like. Gladly accepting support in several
-              ways.
+              If you like my work, please support me. Gladly accepting support
+              in several ways.
             </p>
           </section>
           <div class="card-footer">
-            <router-link to="contact" class="card-footer-item has-text-primary">
+            <router-link to="nagesen" class="card-footer-item has-text-primary">
               <span class="icon">
                 <i class="fas fa-heart" />
               </span>
