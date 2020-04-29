@@ -18,9 +18,9 @@
         </div>
       </div>
     </div>
-    <h1 class="title"><i class="fas fa-envelope" /> Contact</h1>
+    <h1 class="title"><i class="fas fa-envelope" /> Get in touch</h1>
     <p class="subtitle">
-      Let's get in touch
+      My inbox is always open
     </p>
     <div class="box">
       <section class="content">
