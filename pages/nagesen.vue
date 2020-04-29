@@ -1,9 +1,8 @@
 <template>
   <div class="has-text-centered">
-    <h1 class="title"><i class="fas fa-coins" /> Support me</h1>
+    <h1 class="title"><i class="fas fa-bullhorn" /> Support me</h1>
     <p class="subtitle">
-      In Japan, sending money and gifts for support on the Internet is known as
-      <em>Nagesen</em>.
+      Please support me if you like
     </p>
     <div class="columns">
       <div class="column">
@@ -11,8 +10,13 @@
           <section class="content">
             <h2><i class="fas fa-heart" /> Would you support me?</h2>
             <p>
-              Please support me if you like. Gladly accepting support in several
-              ways.
+              If you like my work, please support me. Gladly accepting support
+              in several ways.<br />
+              <small class="has-text-grey">
+                <i class="fas fa-lightbulb" />
+                Tidbits: In Japan, sending money and gifts for support on the
+                internet is known as <em>Nagesen</em>.
+              </small>
             </p>
           </section>
         </div>
