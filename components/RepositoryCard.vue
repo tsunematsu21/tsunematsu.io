@@ -62,14 +62,14 @@
       </section>
     </div>
     <footer class="card-footer">
-      <p class="card-footer-item">
-        <span>
-          View on
-          <a :href="html_url" target="_blank"
-            >GitHub <i class="fab fa-github"
-          /></a>
-        </span>
-      </p>
+      <a
+        :href="html_url"
+        target="_blank"
+        class="card-footer-item has-text-primary"
+      >
+        <span class="icon"><i class="fab fa-github"/></span>
+        <span>View on GitHub</span>
+      </a>
     </footer>
   </div>
 </template>
