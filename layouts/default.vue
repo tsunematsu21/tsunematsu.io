@@ -121,7 +121,7 @@ export default Vue.extend({
         {
           name: 'Support me',
           path: '/nagesen',
-          classes: 'fas fa-coins'
+          classes: 'fas fa-bullhorn'
         }
       ]
     }
