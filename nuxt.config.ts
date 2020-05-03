@@ -19,11 +19,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   loading: { color: '#fff' },
-  css: [
-    '~assets/main.scss',
-    '@fortawesome/fontawesome-free/css/all.css',
-    '~assets/transition.scss'
-  ],
+  css: ['~assets/scss/main.scss'],
   router: {
     linkActiveClass: 'is-active'
   },
