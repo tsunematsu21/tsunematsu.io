@@ -5,17 +5,11 @@ on:
     branches:
       - develop
     paths:
-      - assets/**
-      - components/**
-      - layouts/**
-      - middleware/**
-      - pages/**
-      - plugins/**
-      - static/**
-      - store/**
+      - src/**
       - nuxt.config.js
-      - package.json
       - tsconfig.json
+      - package.json
+      - yarn.lock
 
 jobs:
   publish:
@@ -36,7 +30,7 @@ jobs:
         run: yarn generate
 
       - name: Publish to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.0
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
         with:
           dir: dist
           branch: master

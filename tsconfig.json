@@ -1,4 +1,7 @@
 {
+  "files": [
+    "shims-vue.d.ts"
+  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",

@@ -1,7 +1,8 @@
 import { Configuration } from '@nuxt/types'
 
-const nuxtConfig: Configuration = {
+export default {
   mode: 'spa',
+  srcDir: 'src',
   head: {
     title: 'tsunematsu.io | The awesome portfolio',
     meta: [
@@ -39,6 +40,4 @@ const nuxtConfig: Configuration = {
   googleAnalytics: {
     id: 'UA-153177112-1'
   }
-}
-
-module.exports = nuxtConfig
+} as Configuration
