@@ -35,5 +35,6 @@ export default {
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-analytics'],
   googleAnalytics: {
     id: 'UA-153177112-1'
-  }
+  },
+  plugins: ['~/plugins/navigations']
 } as Configuration

@@ -1,5 +1,5 @@
 <template>
-  <div class="has-text-centered">
+  <div>
     <div class="modal" :class="{ 'is-active': isActive }">
       <div class="modal-background" @click="closeModal"></div>
       <div class="modal-content">
@@ -18,19 +18,15 @@
         </div>
       </div>
     </div>
-    <h1 class="title"><i class="fas fa-envelope" /> Get in touch</h1>
-    <p class="subtitle">
-      My inbox is always open
-    </p>
-    <div class="box">
-      <section class="content">
-        <h2><i class="fas fa-cat" /> Say hello</h2>
-        <p>
-          Want to get in touch? I'm not currently looking for a job, but welcome
-          feedback and chat.<br />
-          Fill out the form below and I will try my best to reply to you.
-        </p>
-      </section>
+    <app-section>
+      <h1 class="title"><i class="fas fa-envelope" /> Get in touch</h1>
+      <p>
+        Want to get in touch? I'm not currently looking for a job, but welcome
+        feedback and chat.<br />
+        Fill out the form below and I will try my best to reply to you.
+      </p>
+    </app-section>
+    <app-section class="is-small">
       <form @submit.prevent="submit">
         <div class="field is-horizontal">
           <div class="field-label is-normal">
@@ -113,15 +109,19 @@
           </div>
         </div>
       </form>
-    </div>
+    </app-section>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import axios from 'axios'
+import AppSection from '~/components/AppSection.vue'
 
 export default Vue.extend({
+  components: {
+    AppSection
+  },
   data() {
     return {
       isActive: false,
