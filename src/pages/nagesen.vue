@@ -32,7 +32,7 @@
             <div class="columns">
               <div class="column">
                 <a href="kyash://qr/u/7919347958298828142">
-                  <img src="~/assets/kyash_qrcode.png" />
+                  <img src="~/assets/img/kyash_qrcode.png" />
                 </a>
               </div>
               <div class="column">
